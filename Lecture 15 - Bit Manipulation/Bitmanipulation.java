@@ -6,13 +6,12 @@ public class Bitmanipulation {
         // get bit
 
         // Question => get the 3rd bit (position = 2) of a number n.(n=0101)
-        // int n =5;
+        // int n = 5;
         // int pos = 3;
-        // int bitMask = 1<<pos;
-        // if((bitMask & n)==0){
+        // int bitMask = 1 << pos;
+        // if ((bitMask & n) == 0) {
         // System.out.println("bit was zero");
-        // }
-        // else{
+        // } else {
         // System.out.println("bit was one");
         // }
 
@@ -37,12 +36,13 @@ public class Bitmanipulation {
         // System.out.println(newNumber);
 
         // Update bit
+
         Scanner sc = new Scanner(System.in);
         int oper = sc.nextInt();
         int n = 5;
         int pos = 1;
         int bitMask = 1 << pos;
-        if (oper == 1) {
+        if (oper == 1) { // update bit to 1 else update bit to 0
             int newNumber = bitMask | n;
             System.out.println(newNumber);
         } else {
